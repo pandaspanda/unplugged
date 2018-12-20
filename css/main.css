@@ -105,31 +105,200 @@ textarea {
                                 HOMEPAGE
 ========================================================================== */
 
+/* ========== BASE STYLES ================================================ */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 
 /* ========== HEADER ===================================================== */
 
+header.content-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+header.header-divider {
+
+}
+
     /* LOGO ======================= */
+
+header img.logo {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
     /* NAV ======================== */
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* ========== MAIN  ====================================================== */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
 
     /* HERO-AREA ================== */
 
+.hero-area {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/jake-melara-30679-unsplash.jpg);
+    height: auto;
+}
+
+.hero-area h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
     /* NEWSLETTER SIGN-UP ========= */
+
+aside .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
 
     /* FEATURES =================== */
 
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.features .features-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
+
     /* REVIEWS ==================== */
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.reviews article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
 
 
 /* ========== FOOTER ===================================================== */
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
     /* CONTACT ==================== */
+
+footer address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
 
     /* SOCIAL ===================== */
 
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+
+
+footer .social-icons  a {
+    text-decoration: none;
+}
+
     /* COPYRIGHT ================== */
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
 
 /* ==========================================================================
                                 FAQS
