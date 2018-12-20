@@ -306,9 +306,37 @@ footer .copyright {
 
 /* ========== MAIN  ====================================================== */
 
+section.faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
     /* QUESTIONS ================== */
 
+.faqs.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
         /* QUESTION ======================== */
+
+article.question-item {
+
+}
+
+.faqs p {
+
+}
+
+p.question {
+
+}
+
+
 
 /* ==========================================================================
                                 ABOUT
