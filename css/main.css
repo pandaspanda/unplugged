@@ -112,6 +112,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    color: white;
 
 }
 
@@ -122,8 +123,33 @@ footer {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+
 }
 
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
 
 /* ========== HEADER ===================================================== */
 
@@ -137,17 +163,17 @@ header .content-wrapper {
     flex-flow: column wrap;
     width: 100%;
     background-color: black;
+    margin: 0;
 }
 
 header .header-divider {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: .5px solid darkgray;
     justify-content: center;
-    margin: 10px 0;
+    margin: 15px 0;
     width: 100%;
-
 }
 
     /* LOGO ======================= */
@@ -177,7 +203,7 @@ header nav ul {
     align-items: center;
     padding: 0;
      width: 100%;
-     margin: 10px 0;
+     margin: 0 0 10px;
 }
 
 header nav ul li {
@@ -200,21 +226,21 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    width: 100%;
 }
 
     /* HERO-AREA ================== */
 
 .hero-area {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     background-image: url(../img/jake-melara-30679-unsplash.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    width: 100%;
+    width: inherit;
     height: 500px;
-    padding: 10px 0;
 }
 
 .hero-area h1 {
@@ -229,13 +255,19 @@ main {
     /* NEWSLETTER SIGN-UP ========= */
 
 aside.newsletter {
+    background-color: darkolivegreen;
+    width: 100%;
+}
+
+.newsletter .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    padding: 15px 20px 40px;
-    background-color: darkolivegreen;
     color: white;
+    margin: 0;
+    padding: 15px 20px 40px;
+
 }
 
 .newsletter h3 {
@@ -248,11 +280,12 @@ aside.newsletter {
     margin: 0;
 }
 
-form {
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    width: ;
 }
 
 input {
@@ -376,12 +409,10 @@ footer address {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    font-style: normal;
 }
 
 footer address a {
-    text-decoration: none;
-    color: inherit;
+
 }
 
 footer h4 {
@@ -437,28 +468,31 @@ section.faqs {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    background-color: darkolivegreen;
+    width: 100%;
 }
 
     /* QUESTIONS ================== */
 
-.faqs.content-wrapper {
+.faqs .content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: column nowrap;
+    padding: 0 20px;
 }
 
         /* QUESTION ======================== */
 
 article.question-item {
+    padding-bottom: 40px;
+}
+
+.faqs h3 {
 
 }
 
 .faqs p {
-
-}
-
-p.question {
 
 }
 
@@ -481,6 +515,11 @@ main {
 
 }
 
+.mission .content-wrapper, .contact-section .content-wrapper {
+    padding: 40px 20px;
+}
+
+
     /* MISSION ==================== */
 
 section.mission {
@@ -488,6 +527,7 @@ section.mission {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    background-color: darkolivegreen;
 }
 
 .mission.content-wrapper {
@@ -509,7 +549,8 @@ section.mission {
     /* MAP ======================== */
 
 section.map {
-
+    height: 450px;
+    width: 100%;
 }
 
 .map figure {
@@ -523,6 +564,8 @@ section.contact-section {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    background-color: darkslategrey;
+    width: inherit;
 }
 
 .contact-section.content-wrapper {
