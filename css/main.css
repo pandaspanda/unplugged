@@ -153,7 +153,9 @@ address {
 
 /* ========== HEADER ===================================================== */
 
-
+header {
+    background-color: black;
+}
 
 
 header .content-wrapper {
@@ -162,7 +164,6 @@ header .content-wrapper {
     align-items: center;
     flex-flow: column wrap;
     width: 100%;
-    background-color: black;
     margin: 0;
 }
 
@@ -313,7 +314,10 @@ input {
     flex-flow: column nowrap;
     width: 50%;
     text-align: center;
+}
 
+.features-items article {
+    width: inherit;
 }
 
 .features h2 {
@@ -347,7 +351,6 @@ input {
 }
 
 
-
 .reviews h2 {
     font-size: 36px;
     line-height: 36px;
@@ -367,8 +370,16 @@ div.previous-retreat-img {
     flex-flow: column nowrap;
 }
 
+article.previous-retreat {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    padding: 10px 0;
+}
+
 .reviews h3 {
-    width: 45%;
+
     padding: 20px 0;
     margin: 0;
 }
@@ -682,38 +693,273 @@ section.contact-section {
    Modify as content requires.
    ========================================================================== */
 
+
 /* ==========================================================================
     ============================ TABLET ====================================
 ========================================================================== */
 
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+
+
 /* ==========================================================================
                                 HOMEPAGE
 ========================================================================== */
 
   /* ========== HEADER =================================================== */
 
+header .content-wrapper {
+    flex-flow:  row nowrap ;
+    width: 80%;
+    margin: 30px 0 ;
+}
+
+header .header-divider {
+    border: none;
+}
+
     /* LOGO ======================= */
+
+header .logo {
+    margin: 0px;
+}
 
     /* NAV ======================== */
 
+header nav {
+    width: 160px;
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header nav ul li {
+    justify-content: flex-end;
+    width: 80px;
+}
+
+
+
   /* ======== MAIN  ====================================================== */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+}
 
     /* HERO-AREA ================== */
 
+.hero-area {
+    height: 600px;
+}
+
+.hero-area h1 {
+    font-size: 48px;
+    width: 90%;
+    margin: 10%;
+
+}
+
     /* NEWSLETTER SIGN-UP ========= */
+
+aside.newsletter {
+    height: 250px;
+}
+
+.newsletter .content-wrapper{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    padding: 30px 10% ;
+
+}
+
+.newsletter .form-description {
+    width: 40%;
+}
+
+.newsletter h3 {
+    padding: 0 ;
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+.newsletter p {
+    padding:  0 ;
+    margin: 0;
+}
+
+.form {
+    align-items: flex-start;
+    width: 40%;
+}
+
+input {
+}
+
 
     /* FEATURES =================== */
 
+.features {
+    padding: 10%;
+}
+
+.features .features-items {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 80%;
+}
+
+.features-items article {
+    width: 40%;
+}
+
+.features h2 {
+    padding: 10px 0;
+    font-size: 36px;
+}
+
+.features p  {
+    padding: 10px 0;
+}
+
+
+.features .fontawesome-icon {
+    height: 70px;
+}
+
+
+
     /* REVIEWS ==================== */
+
+.reviews {
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding: 10%;
+}
+
+.reviews h2 {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+}
+
+
+.reviews .content-wrapper {
+    padding: 10px 0;
+}
+
+article.previous-retreat {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+
+}
+
+div.previous-retreat-img {
+    margin:  0;
+    width: 45%;
+}
+
+div.previous-retreat-description {
+    width: 45%;
+}
+
+.reviews h3 {
+    padding:  0;
+    margin:  0;
+    width: 100%;
+}
+
+.reviews p {
+    padding: 5px 0;
+    margin: 0;
+}
 
   /* ======== FOOTER ===================================================== */
 
+footer  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    background-color: black;
+    color: white;
+}
+
+footer .content-wrapper {
+    margin: 50px 0;
+    width: 55%;
+}
+
+
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
     /* CONTACT ==================== */
+
+footer address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+footer address a {
+
+}
+
+footer h4 {
+    margin: 0 0 20px 0;
+}
 
     /* SOCIAL ===================== */
 
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+footer .social h4 {
+    margin-top: 50px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+
+
+footer .social-icons  a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
     /* COPYRIGHT ================== */
 
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
 /* ==========================================================================
                                 FAQS
 ========================================================================== */
@@ -735,10 +981,17 @@ section.contact-section {
     /* MAP ======================== */
 
     /* CONTACT INFO =============== */
+
+
+} /* =========  TABLET STYLES END  =========== */
 
 /*=========================================================================================================== DESKTOP ====================================
 ========================================================================== */
 
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+
 /* ==========================================================================
                                 HOMEPAGE
 ========================================================================== */
@@ -794,7 +1047,7 @@ section.contact-section {
     /* CONTACT INFO =============== */
 
 
-
+} /* =========  DESKTOP STYLES END  =========== */
 
 
 
